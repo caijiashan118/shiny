@@ -1,0 +1,227 @@
+/* AI城建系统样式 */
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Microsoft YaHei', sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border-radius: 0.5rem;
+}
+
+.card-header {
+    background-color: #fff;
+    border-bottom: 1px solid #dee2e6;
+    border-radius: 0.5rem 0.5rem 0 0 !important;
+}
+
+.table {
+    font-size: 0.9rem;
+}
+
+.table th {
+    font-weight: 600;
+    background-color: #f8f9fa;
+    border-top: none;
+}
+
+.table-responsive {
+    border-radius: 0.375rem;
+}
+
+.btn {
+    border-radius: 0.375rem;
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link {
+    border-radius: 0.375rem 0.375rem 0 0;
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: white;
+}
+
+.tab-content {
+    background-color: white;
+    border-radius: 0 0.5rem 0.5rem 0.5rem;
+    padding: 1.5rem;
+    margin-top: -1px;
+}
+
+/* 数据表格样式 */
+.dataTables_wrapper {
+    padding-top: 1rem;
+}
+
+.dataTables_filter input {
+    border-radius: 0.375rem;
+    border: 1px solid #ced4da;
+    padding: 0.375rem 0.75rem;
+}
+
+.dataTables_length select {
+    border-radius: 0.375rem;
+    border: 1px solid #ced4da;
+    padding: 0.375rem 0.75rem;
+}
+
+/* 图表容器 */
+.chart-container {
+    position: relative;
+    height: 300px;
+    margin: 1rem 0;
+}
+
+/* 报表样式 */
+.report-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    border-left: 4px solid #0d6efd;
+}
+
+.report-title {
+    color: #0d6efd;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.report-metric {
+    text-align: center;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.report-metric .metric-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+.report-metric .metric-label {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 0.5rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .table-responsive {
+        font-size: 0.8rem;
+    }
+    
+    .btn-sm {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
+    }
+}
+
+/* 加载动画 */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #0d6efd;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 状态指示器 */
+.status-badge {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.status-在建 {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+.status-续建 {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status-完工 {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-暂停 {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* 资金性质标签 */
+.fund-nature-badge {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    display: inline-block;
+    margin: 0.125rem;
+}
+
+.fund-nature-一般债券 {
+    background-color: #e3f2fd;
+    color: #1565c0;
+}
+
+.fund-nature-专项债券 {
+    background-color: #e8f5e8;
+    color: #2e7d32;
+}
+
+.fund-nature-中央综合财力 {
+    background-color: #fff3e0;
+    color: #ef6c00;
+}
+
+.fund-nature-土地出让金 {
+    background-color: #fce4ec;
+    color: #c2185b;
+}
+
+.fund-nature-中央预算内投资 {
+    background-color: #f3e5f5;
+    color: #7b1fa2;
+}
+
+.fund-nature-中央补助 {
+    background-color: #e0f2f1;
+    color: #00695c;
+}
+
+.fund-nature-省级补助 {
+    background-color: #e8eaf6;
+    color: #3f51b5;
+}
